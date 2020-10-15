@@ -25,7 +25,6 @@ newsRouter.get('', async (req, res) => {
 
 newsRouter.get('/:id', async (req, res) => {
     let articleID = req.params.id //show article ID
-
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts/${articleID}`)
         res.render('newsSingle', { article: newsAPI.data })

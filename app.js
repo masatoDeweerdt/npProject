@@ -1,8 +1,17 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const mongoose = require('mongoose')
 
 const app = express()
 const port = 5000
+
+require('dotenv').config()
+
+// DB Connection
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+const db = mongoose.connection
+db.once('open', () => console.log('Connected to Database'))
+db.on('error', (error) => console.error(error))
 
 // Static Files
 app.use(express.static('public'))
