@@ -1,9 +1,9 @@
 const express = require('express')
-const newsRouter = express.Router()
+const router = express.Router()
 const axios = require('axios')
 // const unirest = require("unirest");
 
-newsRouter.get('', async (req, res) => {
+router.get('', async (req, res) => {
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts`)
         res.render('news', { articles: newsAPI.data })
@@ -23,7 +23,7 @@ newsRouter.get('', async (req, res) => {
 
 // Single news page
 
-newsRouter.get('/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     let articleID = req.params.id //show article ID
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts/${articleID}`)
@@ -46,7 +46,7 @@ newsRouter.get('/:id', async (req, res) => {
 
 // Search
 
-newsRouter.post('', async (req, res) => {
+router.post('', async (req, res) => {
     let search = req.body.search
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts?search=${search}`)
@@ -67,4 +67,12 @@ newsRouter.post('', async (req, res) => {
     }
 })
 
-module.exports = newsRouter
+// Login Page
+
+router.get('/login', (req, res) => res.send('Login'))
+
+// Register Page
+
+router.get('/register', (req, res) => res.send('Register'))
+
+module.exports = router

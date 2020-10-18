@@ -1,6 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
+const expressLayouts = require('express-ejs-layouts')
 
 const app = express()
 const port = 5000
@@ -30,6 +31,7 @@ const newsRouter = require('./src/routes/news')
 
 app.use('/', newsRouter) // Front page
 app.use('/article', newsRouter) // Single article
+app.use('/users', require('./src/routes/users'))
 
 // Listen on port 5000
 app.listen(port, () => console.log(`Listening to port ${port}`))
