@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>How to Design Login & Registration Form Transition</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/layouts.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="form sign-up">
+            <h2>Sign Up</h2>
+            <form action="/users/register" method="POST">
+                <label for="name">
+                    <span>Name</span>
+                    <input type="text" name="name" value="<%= typeof name != 'undefined' ? name : '' %>" />
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <input type="email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>" />
+                </label>
+                <label for="password">
+                    <span>Password</span>
+                    <input type="password" name="password"
+                        value="<%= typeof password != 'undefined' ? password : '' %>" />
+                </label>
+                <label for="password2">
+                    <span>Confirm Password</span>
+                    <input type="password" name="password2"
+                        value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+                </label>
+                <button type="submit" class="submit">Sign Up Now</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+
+</html>

@@ -3,6 +3,8 @@ const router = express.Router()
 const axios = require('axios')
 // const unirest = require("unirest");
 
+router.get('/', (req, res) => res.render('welcome'))
+
 router.get('', async (req, res) => {
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts`)
@@ -66,13 +68,8 @@ router.post('', async (req, res) => {
         }
     }
 })
+// Welcome
 
-// Login Page
-
-router.get('/login', (req, res) => res.send('Login'))
-
-// Register Page
-
-router.get('/register', (req, res) => res.send('Register'))
+router.get('/', (req, res) => res.render('welcome'))
 
 module.exports = router

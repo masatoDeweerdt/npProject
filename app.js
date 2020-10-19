@@ -24,12 +24,15 @@ app.use('/js', express.static(__dirname + 'public/css'))
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
-app.use(bodyParser.urlencoded({ extended: true }))
+// Bodyparser
+
+// app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 // Routes
 const newsRouter = require('./src/routes/news')
 
-app.use('/', newsRouter) // Front page
+app.use('/', newsRouter) // News page
 app.use('/article', newsRouter) // Single article
 app.use('/users', require('./src/routes/users'))
 
