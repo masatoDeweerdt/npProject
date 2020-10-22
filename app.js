@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const expressLayouts = require('express-ejs-layouts')
+const flash = require('connect-flash')
+const session = require('express-session')
 
 const app = express()
 const port = 5000
@@ -28,6 +30,18 @@ app.set('view engine', 'ejs')
 
 // app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.urlencoded({ extended: true }))
+
+// Express session
+app.use(session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+}));
+
+// Connect flash
+app.use(flash());
+
+// VIDEO ==== 55:31 ====
 
 // Routes
 const newsRouter = require('./src/routes/news')

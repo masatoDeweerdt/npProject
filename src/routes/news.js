@@ -68,8 +68,7 @@ router.post('', async (req, res) => {
         }
     }
 })
-// Welcome
 
-router.get('/', (req, res) => res.render('welcome'))
+
 
 module.exports = router
