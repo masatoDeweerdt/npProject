@@ -4,6 +4,7 @@ const axios = require('axios')
 // const unirest = require("unirest");
 
 router.get('/', (req, res) => res.render('welcome'))
+// router.get('/news', (req, res) => res.render('welcome'))
 
 router.get('', async (req, res) => {
     try {

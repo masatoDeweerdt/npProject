@@ -59,6 +59,7 @@ app.use((req, res, next) => {
 
 // Routes
 const newsRouter = require('./src/routes/news')
+// const welcomeRouter = require('./src/views/welcome')
 
 app.use('/news', newsRouter) // News page
 app.use('/article', newsRouter) // Single article
