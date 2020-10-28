@@ -6,7 +6,7 @@ const axios = require('axios')
 router.get('/', (req, res) => res.render('welcome'))
 // router.get('/news', (req, res) => res.render('welcome'))
 
-router.get('', async (req, res) => {
+router.get('/news', async (req, res) => {
     try {
         const newsAPI = await axios.get(`https://techcrunch.com/wp-json/wp/v2/posts`)
         res.render('news', { articles: newsAPI.data })
