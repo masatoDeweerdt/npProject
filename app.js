@@ -4,11 +4,15 @@ const mongoose = require('mongoose')
 const expressLayouts = require('express-ejs-layouts')
 const flash = require('connect-flash')
 const session = require('express-session')
+const passport = require('passport')
 
 const app = express()
 const port = 5000
 
 require('dotenv').config()
+
+// Passport config
+require('./src/config/passport')(passport);
 
 // DB Connection
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -38,15 +42,25 @@ app.use(session({
     saveUninitialized: true
 }));
 
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
 // Connect flash
 app.use(flash());
 
-// VIDEO ==== 55:31 ====
+// Global Vars
+app.use((req, res, next) => {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
+});
 
 // Routes
 const newsRouter = require('./src/routes/news')
 
-app.use('/', newsRouter) // News page
+app.use('/news', newsRouter) // News page
 app.use('/article', newsRouter) // Single article
 app.use('/users', require('./src/routes/users'))
 
