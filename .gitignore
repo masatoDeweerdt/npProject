@@ -4,4 +4,3 @@ node_modules
 .env
 # misc
 .DS_Store
-rest.rest

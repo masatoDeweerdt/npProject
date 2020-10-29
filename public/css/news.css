@@ -12,7 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   /* background: -webkit-linear-gradient(left, #7579ff, #b224ef); */
-  background: black;
+  background: rgb(130, 180, 180);
   font-family: 'Nunito', sans-serif;
 }
 

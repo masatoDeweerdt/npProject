@@ -1,6 +1,0 @@
-GET http://localhost:5000
-
-###
-
-GET http://newsapi.org/v2/everything?q=bitcoin&from=2020-09-15&sortBy=publishedAt&apiKey=API_KEY
-
