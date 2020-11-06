@@ -1,10 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const axios = require('axios')
-// const unirest = require("unirest");
+const { ensureAuthenticated } = require('../config/auth')
 
 router.get('/', (req, res) => res.render('welcome'))
-// router.get('/news', (req, res) => res.render('welcome'))
+
+// router.get('/news', ensureAuthenticated, (req, res) =>
+//     res.render('news', {
+//         name: req.user.name
+//     }));
+
+router.get('/logout', (req, res) => res.render('news'))
 
 router.get('/news', async (req, res) => {
     try {
@@ -69,7 +75,5 @@ router.post('', async (req, res) => {
         }
     }
 })
-
-
 
 module.exports = router

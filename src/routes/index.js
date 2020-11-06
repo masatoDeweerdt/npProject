@@ -1,13 +1,15 @@
-const express = require('express');
-const router = express.Router();
-const { ensureAuthenticated } = require('..config/auth');
+// const express = require('express');
+// const router = express.Router();
+// const { ensureAuthenticated } = require('..config/auth');
 
-// Welcome Page
-router.get('/', (req, res) => res.render('welcome'));
-// Dashboard
-router.get('/dashboard', ensureAuthenticated, (req, res) =>
-    res.render('dashboard', {
-        name: req.user.name
-    }));
+// // Welcome Page
+// router.get('/', (req, res) => res.render('welcome'));
 
-module.exports = router;
+// router.get('/news', (req, res) => res.render('news'))
+// // Dashboard
+// router.get('/news', ensureAuthenticated, (req, res) =>
+//     res.render('news', {
+//         name: req.user.name
+//     }));
+
+// module.exports = router;

@@ -5,6 +5,7 @@ const expressLayouts = require('express-ejs-layouts')
 const flash = require('connect-flash')
 const session = require('express-session')
 const passport = require('passport')
+const nodemailer = require('nodemailer')
 
 const app = express()
 const port = 5000
@@ -26,14 +27,13 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/img', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/css'))
 
-// Templating Engine
+// View Engine setup
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
 // Bodyparser
-
-// app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 // Express session
 app.use(session({
