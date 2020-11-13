@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b265f8cbaa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">Node.js News</div>
-        <a href="/users/logout" type="submit" class="#">Logout</a>
+        <!-- <div class="header__logo">Tech News</div> -->
+        <div class='navMenu' id='navMenuId'><a href='/news' class='main_links'>Home</a>
+            <div class='dropdown'><button class='dropbtn'><i class="fas fa-user"></i></button>
+                <div class='dropdown-content'><a href='/users/logout'><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                </div>
+            </div><a class='icon' href='javascript:void(0);' onclick='openMenu()'>&#9776;</a>
+        </div>
         <%- include('./partials/search') %>
     </header>
 
@@ -33,9 +39,15 @@
         </div>
     </div>
 
+    <footer>
+
+    </footer>
 
 
 
+    <script>
+        function openMenu() { var navMain = document.getElementById('navMenuId'); if (navMain.className === 'navMenu') { navMain.className += ' mobileView'; } else { navMain.className = 'navMenu'; } }
+    </script>
 </body>
 
 </html>

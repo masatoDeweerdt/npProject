@@ -8,11 +8,20 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b265f8cbaa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">Node.js News</div>
+        <div class='navMenu' id='navMenuId'><a href='' class='main_links'>Home</a>
+            <div class='dropdown'><button class='dropbtn'>User<i class='fa fa-caret-down'>&#9660;</i></button>
+                <div class='dropdown-content'><a href='/users/logout'>logout</a></div>
+            </div><a class='icon' href='javascript:void(0);' onclick='openMenu()'>&#9776;</a>
+        </div>
+        <div class="header__logo">Tech News</div>
+
+        <a href="/users/logout" type="submit" class="logout">Logout</a>
+
         <%- include('./partials/search') %>
     </header>
 

@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b265f8cbaa.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="header">
-        <div class="header__logo">Node.js News</div>
+        <!-- <div class="header__logo">Tech News</div> -->
+        <div class='navMenu' id='navMenuId'><a href='/news' class='main_links'>Home</a>
+            <div class='dropdown'><button class='dropbtn'><i class="fas fa-user"></i></button>
+                <div class='dropdown-content'><a href='/users/logout'><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                </div>
+            </div><a class='icon' href='javascript:void(0);' onclick='openMenu()'>&#9776;</a>
+        </div>
         <%- include('./partials/search') %>
     </header>
 
     <div class="wrapper">
         <div class="news-single">
-            <a href="/">&larr; Back</a>
+            <a href="/news">&larr; Back</a>
             <% if(article != null) { %>
             <img src="<%- article.jetpack_featured_media_url %>" alt="<%- article.title.rendered  %>">
             <h2><%- article.title.rendered %></h2>

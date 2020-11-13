@@ -5,11 +5,6 @@ const { ensureAuthenticated } = require('../config/auth')
 
 router.get('/', (req, res) => res.render('welcome'))
 
-// router.get('/news', ensureAuthenticated, (req, res) =>
-//     res.render('news', {
-//         name: req.user.name
-//     }));
-
 router.get('/logout', (req, res) => res.render('news'))
 
 router.get('/news', async (req, res) => {
