@@ -1,7 +1,7 @@
 body {
   margin: 0%;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f6f6f6;
+  background-color: #e4e4e7;
 }
 
 img {
@@ -15,7 +15,7 @@ h2 {
 
 .navMenu{
   overflow:hidden;
-  background-color:#408080;
+  background-color:#0F4C81;
 }
 .navMenu a{
   float:left;
@@ -27,7 +27,7 @@ h2 {
   font-size:17px
 }
 .navMenu a.active{
-  background-color:#25a186;
+  background-color:#0F4C81;
   color:#FFF
 }
 .navMenu .icon{
@@ -46,21 +46,21 @@ h2 {
   outline:none;
   color:#FFFFFF;
   padding:14px 16px;
-  background-color: #10555A;
+  background-color: #0F4C81;
   font-family:inherit;
   width:100%;
   text-align:left
 }
 .main_links{
-  background-color: #10555A;
+  background-color: #0F4C81;
   color:#FFFFFF;
 }
 .main_links:hover{
-  background-color: #408080;
+  background-color: #1163aa;
   color:#FFFFFF
 }
 .navMenu .navbar a:hover,.navMenu .dropdown:hover .dropbtn{
-  background-color: #408080;
+  background-color: #1163aa;
   color:#FFFFFF
 }
 .navMenu .dropdown-content{
@@ -77,11 +77,11 @@ h2 {
   text-decoration:none;
   display:block;
   text-align:left;
-  background-color:#408080;
+  background-color:#1163aa;
   color:#FFFFFF
 }
 .navMenu .dropdown-content a:hover{
-  background-color:#333;
+  background-color:#1676ca;
   color:#FFFFFF
 }
 .navMenu .dropdown:hover .dropdown-content{
@@ -111,8 +111,8 @@ h2 {
           align-items: center;
   padding-right: 10px;
   color: white;
-  background-color: #10555A;
-  margin-bottom: 10px;
+  background-color: #0F4C81;
+  /* margin-bottom: 10px; */
 }
 
 .header__search input[type=text] {
@@ -140,10 +140,14 @@ h2 {
 }
 
 .news__card {
+  border: 1px solid rgb(247, 247, 247);
+  border-radius: 10px;
   text-decoration: none;
   color: #070707;
-  background-color: white;
+  background-color: rgb(240, 239, 239);
+  border: 1px solid rgb(190, 190, 190);
   padding: 20px;
+  margin: 10px;
 }
 
 .news__card:hover {
@@ -152,6 +156,8 @@ h2 {
 }
 
 .news-single {
+  border: 1px solid rgb(247, 247, 247);
+  border-radius: 10px;
   background-color: #fff;
   max-width: 1300px;
   margin: 0 auto;

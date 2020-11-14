@@ -1,0 +1,15 @@
+<header class="header">
+    <!-- <div class="header__logo">Tech News</div> -->
+    <div class='navMenu' id='navMenuId'><a href='/news' class='main_links'>Home</a>
+        <div class='dropdown'><button class='dropbtn'><i class="fas fa-user"></i></button>
+            <div class='dropdown-content'><a href='/users/logout'><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+            </div>
+        </div><a class='icon' href='javascript:void(0);' onclick='openMenu()'>&#9776;</a>
+    </div>
+    <div class="header__search">
+        <form action="/" method="POST">
+            <input type="text" name="search" placeholder="Search for news" required>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+</header>

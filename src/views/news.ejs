@@ -12,16 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- <div class="header__logo">Tech News</div> -->
-        <div class='navMenu' id='navMenuId'><a href='/news' class='main_links'>Home</a>
-            <div class='dropdown'><button class='dropbtn'><i class="fas fa-user"></i></button>
-                <div class='dropdown-content'><a href='/users/logout'><i class="fas fa-sign-out-alt"></i> Sign Out</a>
-                </div>
-            </div><a class='icon' href='javascript:void(0);' onclick='openMenu()'>&#9776;</a>
-        </div>
-        <%- include('./partials/search') %>
-    </header>
+    <%- include('./partials/newsheader') %>
 
     <div class="wrapper">
         <div class="news">
