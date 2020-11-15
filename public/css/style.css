@@ -2,6 +2,8 @@ body {
   margin: 0%;
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #e4e4e7;
+  -webkit-font-smoothing: antialiased;
+  color: #999;
 }
 
 img {
@@ -128,7 +130,7 @@ h2 {
 }
 
 .wrapper {
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .news {
@@ -163,4 +165,44 @@ h2 {
   margin: 20px;
   padding: 1rem;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer {
+	max-width: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.github_icon {
+  font-size: 30px;
+}
+
+.footer,
+.footer a {
+color: #999;
+font-size: 0.9rem;
+}
+
+.footer p {
+margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 2rem;
+}
+
+.footer li {
+line-height: 1.9;
+list-style: none;
+}
+
+.footer .lang-select {
+margin-top: 2rem;
+color: #999;
+background-color: #000;
+background-image: none;
+border: 1px solid #333;
+padding: 1rem 1.2rem;
+border-radius: 5px;
+}
