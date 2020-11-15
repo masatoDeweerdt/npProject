@@ -13,7 +13,7 @@
 - Team challenge :  `solo`
 
 ## Objectifs
-Exercice qui vise à allier les compétences front end & back end pour créer un site complet avec diverses fonctionnalités. Le thème choisi sera l'actualité dans le domaine de la technologie. 
+Exercice qui vise à allier les compétences front end & back end pour créer un site complet avec diverses fonctionnalités. Le thème choisi sera un site d'actualité dans le domaine de la technologie. 
 
 ## Charte graphique
 
@@ -21,10 +21,10 @@ Sur base du "classic blue" de la sélection Pantone (HEX 0F4C81)
 
 ## Techno
 
-*JavaScript
-*NodeJS
-*Express
-*MongoDB
+-JavaScript
+-NodeJS
+-Express
+-MongoDB
 
 ## API
 
