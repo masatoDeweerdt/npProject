@@ -21,10 +21,10 @@ Sur base du "classic blue" de la sélection Pantone (HEX 0F4C81)
 
 ## Techno
 
--JavaScript
--NodeJS
--Express
--MongoDB
+* JavaScript
+* NodeJS
+* Express
+* MongoDB
 
 ## API
 
@@ -32,8 +32,8 @@ Sur base du "classic blue" de la sélection Pantone (HEX 0F4C81)
 
 ## Fonctionnalités du site
 
--Un système de sessions : inscription, connexion / déconnexion
--API REST de WordPress
+* Un système de sessions : inscription, connexion / déconnexion
+* API REST de WordPress
 
 ## Images utilisées
 
