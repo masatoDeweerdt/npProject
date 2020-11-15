@@ -45,4 +45,3 @@ Royality Free de [Pexels](https://www.pexels.com/) & [unsplash](https://unsplash
 ![Screenshot2](https://cdn.discordapp.com/attachments/737683445970370610/777646846872649748/login.png)
 ![Screenshot3](https://cdn.discordapp.com/attachments/737683445970370610/777646851008364624/register.png)
 ![Screenshot4](https://cdn.discordapp.com/attachments/737683445970370610/777646860394692608/main_news.png)
-
