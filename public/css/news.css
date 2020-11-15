@@ -12,8 +12,9 @@ body{
   justify-content: center;
   align-items: center;
   /* background: -webkit-linear-gradient(left, #7579ff, #b224ef); */
-  background: rgb(74, 78, 78);
+  /* background: rgb(74, 78, 78); */
   font-family: 'Nunito', sans-serif;
+  background: url(../img/landing.jpg);
 }
 
 input, button{
@@ -23,9 +24,10 @@ input, button{
 }
 
 .cont{
+  opacity: 0.85;
   overflow: hidden;
   position: relative;
-  width: 640px;
+  width: 420px;
   height: 600px;
   background: #fff;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
@@ -34,7 +36,7 @@ input, button{
 
 .form{
   position: relative;
-  width: 640px;
+  width: 420px;
   height: 100%;
   padding: 50px 30px;
 }

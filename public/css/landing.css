@@ -58,7 +58,7 @@ img {
     height: 100%;
     z-index: 1;
     background: rgba(0,0,0, 0.2); /*  background opacity */
-    box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; /* dark in the corner */
+    /* box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000; dark in the corner */
 }
 
 /* MAIN */
@@ -98,7 +98,7 @@ img {
 
 .showcase-content h1 {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     line-height: 1.1;
     margin: 0 0 2rem;
 }
@@ -106,12 +106,52 @@ img {
 .showcase-content p {
     color: #fff;
     font-weight: 400;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     line-height: 1.25;
     margin: 0 0 2rem;
 }
 
-/* buttons */
+.BUTTON_GFG {
+    padding-top: 8px;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-weight: 100;
+    -webkit-box-shadow: 1px 1px 70px 0 #000000;
+    -moz-box-shadow: 1px 1px 7px 0 #000000;
+    box-shadow: 1px 1px 7px 0 #000000;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .BUTTON_GFG:hover {
+    border: solid #b8bdac 1px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
 
 .btn {
     display: inline-block;
