@@ -17,7 +17,7 @@ Exercice qui vise à allier les compétences front end & back end pour créer un
 
 ## Charte graphique
 
-*Sur base du "classic blue" de la sélection Pantone (HEX 0F4C81)
+Sur base du "classic blue" de la sélection Pantone (HEX 0F4C81)
 
 ## Techno
 
@@ -32,12 +32,12 @@ Exercice qui vise à allier les compétences front end & back end pour créer un
 
 ## Fonctionnalités du site
 
-*Un système de sessions : inscription, connexion / déconnexion
-*API REST de WordPress
+-Un système de sessions : inscription, connexion / déconnexion
+-API REST de WordPress
 
 ## Images utilisées
 
-*Royality Free de [Pexels](https://www.pexels.com/) & [unsplash](https://unsplash.com/images/stock/royalty-free)
+Royality Free de [Pexels](https://www.pexels.com/) & [unsplash](https://unsplash.com/images/stock/royalty-free)
 
 ## Screenshots
 
